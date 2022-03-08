@@ -1,7 +1,10 @@
 myint = 1
-mystring = "tacocat"
+mystr = "tacocat"
 mybool = True
-mylist = [myint, mystring, mybool]
+mylist = [myint, mystr, mybool]
 
 
-for 
+for stuff in mylist:
+    print(stuff)
+
+ 
