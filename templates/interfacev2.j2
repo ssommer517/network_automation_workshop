@@ -1,0 +1,8 @@
+{% for intf in interfaces %}
+interface GigabitEthernet{{ intf['intf_num'] }}
+  description {{ intf['descr'] }}
+  {% if intf['mode'] == "l3" %}
+  ip address {{ intf['ip_addr'] }}
+  {% endif %}
+  no shutdown
+{% endfor %}
